@@ -1,0 +1,36 @@
+itemGroup.tabModularDrills=Modular Drills
+
+modulardrills.item.tooltip.OperationCost=Operation Cost:
+modulardrills.item.tooltip.MaxCharge=Max Charge:
+modulardrills.item.tooltip.DigSpeed=Dig Speed:
+modulardrills.item.tooltip.Radius=Dig Radius:
+modulardrills.item.tooltip.TipTier=Tip Tier:
+modulardrills.item.tooltip.MotorTier=Motor Tier:
+modulardrills.item.tooltip.BatteryTier=Battery Tier:
+
+item.modulardrills:modulardrill.name=Modular Drill
+
+item.modulardrills:drilltip_0.name=Iron Drill Tip
+item.modulardrills:drilltip_1.name=Bronze Drill Tip
+item.modulardrills:drilltip_2.name=Refined Iron Drill Tip
+item.modulardrills:drilltip_3.name=Diamond Drill Tip
+item.modulardrills:drilltip_4.name=Iridium coated Drill Tip
+item.modulardrills:drilltip_5.name=Iridium Drill Tip
+
+item.modulardrills:drillmotor_0.name=Copper Coiled Small Motor
+item.modulardrills:drillmotor_1.name=Compact Copper Coiled Motor
+item.modulardrills:drillmotor_2.name=Gold Coiled Motor
+item.modulardrills:drillmotor_3.name=Compact Gold Coiled Motor
+item.modulardrills:drillmotor_4.name=Carbon Fiber Coiled Motor
+item.modulardrills:drillmotor_5.name=Compact Carbon Fiber Coiled Motor
+item.modulardrills:drillmotor_6.name=Iridium Coiled Motor
+item.modulardrills:drillmotor_7.name=Compact Iridium Coiled Motor
+
+item.modulardrills:drillbattery_0.name=Embedded RE Battery
+item.modulardrills:drillbattery_1.name=Compact RE Battery
+item.modulardrills:drillbattery_2.name=Embedded Advanced Battery
+item.modulardrills:drillbattery_3.name=Compact Advanced Battery
+item.modulardrills:drillbattery_4.name=Embedded Energy Crystal
+item.modulardrills:drillbattery_5.name=Compact Energy Crystal
+item.modulardrills:drillbattery_6.name=Embedded Lapotron Crystal
+item.modulardrills:drillbattery_7.name=Compact Lapotron Crystal
