@@ -39,31 +39,27 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
 /**
- * The original code of AOE part is belonged to SlimeKnight who is the author of
- * TinkersConstruct
- * 
- * @author âȯ
- *
+ * The original code of AOE part is belonged to SlimeKnights who is the author
+ * of TinkersConstruct
  */
 
 public class ItemModularDrill extends ItemTool implements IElectricItem, IBoxable, IItemHudInfo {
 
 	private static final Material[] materials = { Material.rock, Material.iron, Material.ice, Material.glass, Material.piston, Material.anvil, Material.grass, Material.ground, Material.sand,
 			Material.snow, Material.craftedSnow, Material.clay };
-
 	private static final double operationEnergyCost = 50;
 	private static final double[] operationEnergyCostMultiplierByMotor = new double[] { 1, 1.78, 3.17, 5.64, 10.04, 17.87, 31.87, 56.62, 100 };
 	private static final double[] operationEnergyCostDividerByTip = new double[] { 1, 1.5, 2.25, 3.38, 5.06, 7.59 };
 	private static final double[] maxchargeByBattery = new double[] { 10000, 40000, 100000, 250000, 500000, 1000000, 2500000, 5000000 };
 	private static final double[] transferLimitByBattery = new double[] { 100, 250, 500, 1000, 2500, 5000, 10000, 25000 };
 	private static final int[] tierByBattery = new int[] { 1, 1, 2, 2, 3, 3, 4, 4 };
-	private static final float[] digSpeedMultiplierByMotor = new float[] { 8.0F, 12.0F, 18.0F, 40.5F, 60.8F, 91.1F, 136.7F, 205.0F };
+	private static final float[] digSpeedMultiplierByMotor = new float[] { 12.0F, 18.0F, 27.0F, 40.5F, 60.8F, 91.1F, 136.7F, 205.0F };
 	private static final float[] digSpeedDividerByTip = new float[] { 1.0F, 1.0F, 1.0F, 9.0F, 25.0F, 49.0F };
 	private static final int[] digRadiusByTip = new int[] { 0, 0, 0, 1, 2, 3 };
 	private static final int[] harvestLevelByTip = new int[] { 2, 2, 3, 4, 5, 6 };
 
 	protected ItemModularDrill() {
-		super(1.0F, ToolMaterial.WOOD, Sets.newHashSet());
+		super(1.0F, ToolMaterial.IRON, Sets.newHashSet());
 		setCreativeTab(ModularDrills.tabModulardrills);
 		setUnlocalizedName(References.RESOURCESPREFIX + "modulardrill");
 		ModItems.register(this);
@@ -79,7 +75,7 @@ public class ItemModularDrill extends ItemTool implements IElectricItem, IBoxabl
 	public void registerIcons(IIconRegister iconRegister) {
 		this.itemIcon = iconRegister.registerIcon(ModItems.getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
 	}
-	
+
 	@Override
 	public boolean onBlockStartBreak(ItemStack stack, int x, int y, int z, EntityPlayer player) {
 		// only effective materials matter. We don't want to aoe when beraking
@@ -147,8 +143,8 @@ public class ItemModularDrill extends ItemTool implements IElectricItem, IBoxabl
 
 	private boolean isToolEffective(ItemStack stack, Block block, int meta) {
 		String tool = block.getHarvestTool(meta);
-		
-		if (tool!=null&&(tool.equals("pickaxe") || tool.equals("shovel")))
+
+		if (tool != null && (tool.equals("pickaxe") || tool.equals("shovel")))
 			return true;
 
 		else
